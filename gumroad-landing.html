@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliosphere Store | Your Digital Book Universe</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0f;
+            color: #fff;
+            min-height: 100vh;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0a0a0f 100%);
+        }
+        .logo { font-size: 3rem; margin-bottom: 20px; }
+        h1 { font-size: 2.5rem; margin-bottom: 15px; background: linear-gradient(135deg, #e94560, #feca57); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .subtitle { color: #888; font-size: 1.2rem; max-width: 600px; margin: 0 auto; }
+        
+        .products {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        
+        .product-card {
+            background: #161625;
+            border-radius: 20px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: #e94560; }
+        
+        .product-cover {
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+        }
+        
+        .product-info { padding: 25px; }
+        .product-title { font-size: 1.3rem; margin-bottom: 8px; }
+        .product-desc { color: #888; font-size: 0.9rem; margin-bottom: 15px; line-height: 1.5; }
+        
+        .product-price {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        .price { font-size: 1.5rem; font-weight: bold; color: #e94560; }
+        .was { text-decoration: line-through; color: #666; }
+        
+        .buy-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background: #e94560;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .buy-btn:hover { background: #ff6b6b; }
+        
+        .footer {
+            text-align: center;
+            padding: 40px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            color: #666;
+        }
+        
+        .bundle {
+            max-width: 800px;
+            margin: 0 auto 60px;
+            padding: 40px;
+            background: linear-gradient(135deg, rgba(233,69,96,0.2), rgba(118,75,162,0.2));
+            border-radius: 25px;
+            border: 2px solid #e94560;
+            text-align: center;
+        }
+        .bundle h2 { font-size: 1.8rem; margin-bottom: 10px; }
+        .bundle .save { color: #2ecc71; font-weight: bold; margin-bottom: 15px; }
+        .bundle .desc { color: #aaa; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="logo">📚</div>
+        <h1>Bibliosphere</h1>
+        <p class="subtitle">Your digital book universe. Novels, Kids Books, Drawing Guides & More. Instant download, lifetime access.</p>
+    </div>
+    
+    <div class="bundle">
+        <h2>🎁 Kids Book Bundle - Best Value!</h2>
+        <p class="save">Save 65% - 5 Books for €12.99</p>
+        <p class="desc">Get all our best-selling children's books in one amazing collection!</p>
+        <a href="https://bibliosphere.gumroad.com/l/kids-bundle" class="buy-btn">Get the Bundle →</a>
+    </div>
+    
+    <div class="products">
+        
+        <!-- Drawing Book -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">🎨</div>
+            <div class="product-info">
+                <h3 class="product-title">Complete Drawing for Beginners</h3>
+                <p class="product-desc">Learn to draw from scratch. Step-by-step guide with 50+ exercises. Perfect for complete beginners!</p>
+                <div class="product-price">
+                    <span class="price">€6.99</span>
+                    <span class="was">€12.99</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/drawing-beginners" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <!-- Unicorn Book -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #f093fb, #f5576c);">🦄</div>
+            <div class="product-info">
+                <h3 class="product-title">Rainbow Unicorn Adventures</h3>
+                <p class="product-desc">Join Luna on a magical adventure through the Enchanted Forest! Perfect bedtime story for ages 3-7.</p>
+                <div class="product-price">
+                    <span class="price">€3.99</span>
+                    <span class="was">€7.99</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/unicorn-adventures" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <!-- Dragon Novel -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #667eea, #764ba2);">🐉</div>
+            <div class="product-info">
+                <h3 class="product-title">The Dragon's Apprentice</h3>
+                <p class="product-desc">A dragon chose her. A shadow threatens everything. An epic fantasy adventure awaits! 180 pages of magic.</p>
+                <div class="product-price">
+                    <span class="price">€4.99</span>
+                    <span class="was">€9.99</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/dragons-apprentice" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <!-- Mystery Novel -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #fa709a, #fee140);">🔍</div>
+            <div class="product-info">
+                <h3 class="product-title">The Mystery of Shadow Manor</h3>
+                <p class="product-desc">A family vanishes from a locked house. Detective Chen uncovers secrets that go back generations. 220 pages of suspense!</p>
+                <div class="product-price">
+                    <span class="price">€5.49</span>
+                    <span class="was">€10.99</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/shadow-manor" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <!-- Star Book -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #f5af19, #f12711);">⭐</div>
+            <div class="product-info">
+                <h3 class="product-title">The Brave Little Star</h3>
+                <p class="product-desc">Even the smallest star can light up the whole sky! A touching story about believing in yourself. Ages 5-10.</p>
+                <div class="product-price">
+                    <span class="price">€2.99</span>
+                    <span class="was">€7.49</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/brave-star" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+        <!-- Cat Book -->
+        <div class="product-card">
+            <div class="product-cover" style="background: linear-gradient(135deg, #a8edea, #fed6e3);">🐱</div>
+            <div class="product-info">
+                <h3 class="product-title">Whiskers & Wonder</h3>
+                <p class="product-desc">A tiny kitten with a big imagination explores a world where everything is possible! Ages 3-7.</p>
+                <div class="product-price">
+                    <span class="price">€3.49</span>
+                    <span class="was">€6.99</span>
+                </div>
+                <a href="https://bibliosphere.gumroad.com/l/whiskers-wonder" class="buy-btn">Buy Now</a>
+            </div>
+        </div>
+        
+    </div>
+    
+    <footer class="footer">
+        <p>📚 Bibliosphere - Your Digital Book Universe</p>
+        <p style="margin-top: 10px;">Instant digital delivery • Lifetime access • Secure payment</p>
+    </footer>
+</body>
+</html>

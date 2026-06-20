@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Ebook Downloads | Bibliosphere</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0f;
+            color: white;
+        }
+        .hero {
+            text-align: center;
+            padding: 80px 20px 40px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #0a0a0f 100%);
+        }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .hero p { color: #888; font-size: 1.1rem; }
+        .emoji { font-size: 4rem; margin-bottom: 20px; }
+        
+        .container { max-width: 900px; margin: 0 auto; padding: 40px 20px; }
+        
+        .book-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        
+        .book-card {
+            background: #161625;
+            border-radius: 20px;
+            padding: 30px;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s;
+        }
+        .book-card:hover { transform: translateY(-5px); border-color: #e94560; }
+        
+        .book-icon { font-size: 3rem; margin-bottom: 15px; }
+        .book-title { font-size: 1.2rem; margin-bottom: 5px; }
+        .book-author { color: #888; margin-bottom: 10px; }
+        .book-desc { color: #aaa; font-size: 0.9rem; margin-bottom: 20px; line-height: 1.5; }
+        
+        .price-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+        .price { font-size: 1.3rem; font-weight: bold; color: #2ecc71; }
+        
+        .download-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #2ecc71, #27ae60);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .download-btn:hover { transform: scale(1.03); }
+        
+        .free-badge {
+            background: #feca57;
+            color: #000;
+            padding: 3px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
+        .info-box {
+            background: rgba(46,204,113,0.1);
+            border: 1px solid #2ecc71;
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        .info-box h3 { color: #2ecc71; margin-bottom: 10px; }
+        
+        .formats {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        .format {
+            background: rgba(255,255,255,0.1);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="emoji">📚🎁</div>
+        <h1>Free Ebook Downloads</h1>
+        <p>Download our books directly! EPUB format works on all devices.</p>
+    </div>
+    
+    <div class="container">
+        <div class="info-box">
+            <h3>✨ All Books Now FREE to Download!</h3>
+            <p>We've converted all our books to EPUB format. Click the download button to get your copy instantly - no signup required!</p>
+            <div class="formats">
+                <span class="format">📱 EPUB Format</span>
+                <span class="format">📖 Kindle Compatible</span>
+                <span class="format">📱 iPhone/iPad Ready</span>
+                <span class="format">💻 All E-Readers</span>
+            </div>
+        </div>
+        
+        <div class="book-grid">
+            
+            <div class="book-card">
+                <div class="book-icon">🎨</div>
+                <h3 class="book-title">Complete Drawing for Beginners</h3>
+                <p class="book-author">By Art Academy</p>
+                <p class="book-desc">Learn to draw from scratch with 50+ step-by-step exercises. Perfect for beginners!</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/drawing_for_beginners.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">🦄</div>
+                <h3 class="book-title">Rainbow Unicorn Adventures</h3>
+                <p class="book-author">By Kids Tales Studio</p>
+                <p class="book-desc">Join Luna on a magical adventure! Perfect bedtime story for ages 3-7.</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/rainbow_unicorn.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">🐉</div>
+                <h3 class="book-title">The Dragon's Apprentice</h3>
+                <p class="book-author">By Elena Stories</p>
+                <p class="book-desc">A dragon chose her. A shadow threatens everything. An epic fantasy adventure!</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/dragons_apprentice.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">🔍</div>
+                <h3 class="book-title">The Mystery of Shadow Manor</h3>
+                <p class="book-author">By J. Darkwood</p>
+                <p class="book-desc">A family vanishes from a locked house. Detective Chen uncovers dark secrets.</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/mystery_shadow_manor.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">⭐</div>
+                <h3 class="book-title">The Brave Little Star</h3>
+                <p class="book-author">By Dreamscape Kids</p>
+                <p class="book-desc">Even the smallest star can light up the whole sky! Ages 5-10.</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/brave_little_star.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">⏰</div>
+                <h3 class="book-title">Echoes of Tomorrow</h3>
+                <p class="book-author">By Time Writers</p>
+                <p class="book-desc">Time travel paradox thriller. When James receives a message from his future self...</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/echoes_of_tomorrow.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">📚</div>
+                <h3 class="book-title">Treasury of Short Stories</h3>
+                <p class="book-author">By Bibliosphere</p>
+                <p class="book-desc">10 classic short stories including ghostly tales, mystery, and more!</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/treasury_short_stories.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+            <div class="book-card">
+                <div class="book-icon">🎮</div>
+                <h3 class="book-title">Fun Activity Book for Kids</h3>
+                <p class="book-author">By Kids Fun Factory</p>
+                <p class="book-desc">Mazes, puzzles, coloring pages, dot-to-dot, and more! Ages 4-10.</p>
+                <div class="price-row">
+                    <span class="free-badge">100% FREE</span>
+                    <span class="price">€0.00</span>
+                </div>
+                <a href="epubs/activity_book.epub" download class="download-btn">⬇️ Download EPUB</a>
+            </div>
+            
+        </div>
+        
+        <div class="info-box" style="margin-top: 40px;">
+            <h3>📖 How to Read EPUB Files</h3>
+            <p>EPUB is a universal ebook format that works on almost any device:</p>
+            <div class="formats" style="margin-top: 15px;">
+                <div style="text-align: left; font-size: 0.9rem;">
+                    <strong>📱 On Phone/Tablet:</strong> Use Apple Books (iOS) or Google Play Books (Android)<br>
+                    <strong>💻 On Computer:</strong> Use Calibre, Adobe Digital Editions, or browser<br>
+                    <strong>📚 On Kindle:</strong> Send to your Kindle email or convert with Calibre<br>
+                    <strong>🌐 Any Device:</strong> Upload to Google Drive and use Docs or Play Books
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
